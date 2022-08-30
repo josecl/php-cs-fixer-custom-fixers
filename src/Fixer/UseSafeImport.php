@@ -43,6 +43,7 @@ final class UseSafeImport implements WhitespacesAwareFixerInterface
     public static function getSafeFunctionList(): array
     {
         $paths = [
+            __DIR__ . '/../../../../thecodingmachine/safe/generated/functionsList.php',
             __DIR__ . '/../../../vendor/thecodingmachine/safe/generated/functionsList.php',
             __DIR__ . '/../../vendor/thecodingmachine/safe/generated/functionsList.php',
         ];
