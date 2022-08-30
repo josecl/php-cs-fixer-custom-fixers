@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Josecl\PhpCsFixerCustomFixers\CustomFixers;
+use Josecl\PhpCsFixerCustomFixers\CustomConfig;
 
 $finder = Symfony\Component\Finder\Finder::create()
     ->in([
@@ -13,4 +13,4 @@ $finder = Symfony\Component\Finder\Finder::create()
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
-return CustomFixers::config($finder);
+return (new CustomConfig())->setFinder($finder);
