@@ -40,7 +40,7 @@ return (new CustomConfig())->setFinder($finder);
 Puedes personalizar el set de reglas mediante el parámetro `extraRules`:
 
 ```php
-return (new \Josecl\PhpCsFixerCustomFixers\CustomConfig(extraRules: [
+return (new CustomConfig(extraRules: [
     'yoda_style' => ['equal' => true],
     // ...
 ]))->setFinder($finder);
